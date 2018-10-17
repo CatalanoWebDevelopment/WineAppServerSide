@@ -5,8 +5,6 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 
-let port = 3000
-
 const user = require('./controllers/usercontroller');
 const wine = require('./controllers/winecontroller');
 const userFavorite = require('./controllers/userfavoritecontroller');
@@ -22,4 +20,4 @@ app.use('/favorites-list', listName);
 
 require('./Associations')
 
-app.listen(port);
+app.listen(process.env.PORT);
