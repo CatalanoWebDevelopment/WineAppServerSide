@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize'); 
 
-const sequelize = new Sequelize(`postgresql://postgres:${encodeURIComponent(process.env.PG_SECRET)}@localhost/winemaster`, {
+const sequelize = new Sequelize(`postgresql://postgres:${encodeURIComponent(process.env.PASS)}@localhost/winemaster`, {
     dialect: 'postgres'
 })
 
